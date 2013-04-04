@@ -35,8 +35,8 @@ public class Conta{
 	}
 
 	void transferir(Conta c, double valor){
-		sacar(valor);
-		c.depositar(valor);
+		saldo= saldo - valor;
+		c.saldo = c.saldo + valor;
 
 		System.out.println("Transferência realizada.");
 		System.out.println("Saldo atualizado da Conta debitada: "+saldo);

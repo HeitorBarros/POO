@@ -1,0 +1,6 @@
+class Professor extends Aluno{
+
+	double salario;
+	String formacao;
+
+}

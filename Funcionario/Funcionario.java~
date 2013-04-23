@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 class Funcionario{
 	//ATRIBUTOS
-	public String nome;
-	private double salario;
-	private int cpf;
+	 String nome;
+	 double salario;
+	 int cpf;
 	//CONSTRUTORES
 	public Funcionario(){
 		System.out.println("CRIANDO UM FUNCIONÁRIO!");
@@ -32,10 +32,45 @@ class Funcionario{
 	public static void main(String[] args){
 		Funcionario f1 = new Funcionario(1200.0, "João", 58385328);
 		Funcionario f2 = new Funcionario();
-		System.out.println(f1.salario);
-		f1.mudaSalario(1500.00);
-		System.out.println(f1.salario);
+//		System.out.println(f1.salario);
+//		f1.mudaSalario(1500.00);
+//		System.out.println(f1.salario);
+
+		Empresa coringa = new Empresa();
+		coringa.adiciona(f1);
+
+		System.out.println(coringa.empregados[0].nome);
 
 	}
-
 }
+
+
+class Empresa {
+	// outros atributos
+	Funcionario[] empregados;
+	String cnpj;
+	int qtdeFuncionario;
+
+	Empresa(){
+		empregados = new Funcionario[10];
+		qtdeFuncionario=0;
+	}
+
+	void adiciona(Funcionario f) {
+		System.out.println(qtdeFuncionario);
+		empregados[qtdeFuncionario] = f;
+		qtdeFuncionario++;
+	}
+
+	void mostraEmpregados() {
+		for (int i = 0; i < this.empregados.length; i++) {
+			System.out.println("Funcionário na posição: " + i);
+			System.out.println("Funcionário na posição: " + empregados[i].nome);
+			// preencher para mostrar outras informacoes do funcionario
+		}
+	}	
+	
+}
+
+
+

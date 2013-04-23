@@ -1,0 +1,5 @@
+package br.ifal.arapiraca.conta;
+
+public class Conta {
+
+}

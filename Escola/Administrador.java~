@@ -1,0 +1,7 @@
+class Administrador{
+
+	double salario;
+	String funcao;
+	String cargo;
+
+}

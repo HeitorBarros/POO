@@ -1,0 +1,14 @@
+
+Encapsulamento - é a maneira de proteger 
+atributos e métodos.
+
+- public - Todas as classes podem manipular.
+- private - Apenas a própria classe.
+- protected - Apenas as classes filhas e 
+as classes que estiverem no mesmo pacote.
+
+
+
+Polimorfismo por SOBRESCRITA ou SOBREPOSIÇÃO: Em uma herança, 
+a classe filha(subtipo) reescreve um método da classe pai(supertipo).
+Polimorfismo por SOBRECARGA;

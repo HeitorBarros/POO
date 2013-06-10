@@ -1,0 +1,18 @@
+
+
+Classe abstrata -> é uma classe que NÃO pode ser criada/instanciada. 
+	Ou seja, você não pode criar um objeto do seu tipo.
+	ERRO -> ObjetoAbstrato obj = new ObjetoAbstrato();
+	
+	Ela serve para especificar atributos e métodos que serão utilizadas
+	pelos seus subtipos.
+	
+	
+Método abstrato -> é um método de uma classe abstrata que não possui 
+	implementação na classe mãe, mas DEVE ser implementado nas classes
+	filhas.
+	A classe pai OBRIGA as classes filhas a implementar o método!
+		
+Interfaces -> são estruturas que definem métodos que devem ser
+ 	criados pelas classes que implementam essa interface. 
+ 	Ou seja, ela obriga a classe a implementar determinados métodos.
